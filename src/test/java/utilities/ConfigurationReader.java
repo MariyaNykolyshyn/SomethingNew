@@ -7,8 +7,8 @@ public class ConfigurationReader {
     private static Properties  configFile;
 
     static{
+        String path = "configuration.properties";
         try{
-            String path = "configuration.properties";
             FileInputStream input = new FileInputStream(path);
 
             configFile = new Properties();
@@ -20,5 +20,6 @@ public class ConfigurationReader {
     }
     public static String getProperty(String keyName){
         return configFile.getProperty(keyName);
+
     }
 }

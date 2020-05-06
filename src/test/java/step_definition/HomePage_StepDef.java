@@ -13,10 +13,9 @@ import static org.junit.Assert.assertEquals;
 public class HomePage_StepDef {
 
 
-    @Given("^the user is on the pome page$")
-    public void the_user_is_on_the_pome_page()  {
+    @Given("^the user is on the home page$")
+    public void the_user_is_on_the_home_page()  {
         System.out.println("Open the page");
-        Driver.getDriver().get(ConfigurationReader.getProperty("browser"));
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
